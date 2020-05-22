@@ -1,0 +1,145 @@
+:root {
+  --primary-font: 'Open Sans', sans-serif;
+  --secondary-font: 'Poppins', sans-serif;
+  --primary-color: #5fd387;
+  --secondary-color: #ffffff;
+  --danger: #ff0062;
+  --shadow: 3px 3px 10px #ddd;
+  --space: 30px;
+}
+
+body {
+  font-family: var(--secondary-font);
+  background-color: var(--secondary-color);
+  /* background: url('https://i.ibb.co/SKBDBrn/Smarter-Safer-Choices-Microsite-Assets-Homescreen-background.png'); */
+  background-size: cover;
+  background-repeat: repeat;
+  color: #232323;
+  margin: 8px 4px 0 4px;
+  padding-bottom: 120px;
+
+}
+
+a {
+  color: var(--primary-color);
+}
+
+a:hover a:active {
+  color: var(--primary-color);
+}
+
+.primary-text {
+  color: var(--primary-color);
+}
+
+.firstcon {
+  padding: 0 12% 2% 12%;
+}
+
+@media (max-width: 1024px) {
+  .firstcon {
+    padding: 2% 10% 2% 10%;
+  }
+}
+
+.headerlogo {
+  height: 200px;
+}
+
+.takequizbtn {
+  width: 310px;
+}
+
+@media (max-width: 1024px) {
+  .takequizbtn {
+    width: 200px;
+  }
+}
+
+h1 {
+  font-size: 24px;
+}
+
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 16px;
+  }
+}
+
+p {
+  font-size: 15px;
+  padding-top: 1%;
+}
+
+@media (max-width: 1024px) {
+  p {
+    font-size: 14px;
+  }
+}
+
+li {
+  padding-top: 5px;
+  text-align: left;
+}
+
+ ul {
+   text-align: left;
+ }
+
+.btn-sm {
+  background-color: #34d058;
+  color: white;
+}
+
+.footer {
+  display: inline-block;
+  text-align: left;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  position: fixed;
+  color: black;
+  background-color: white;
+  padding: 20px 0;
+}
+
+.footerbtns {
+  text-align: right;
+  float: right;
+  margin-right: 5%;
+}
+
+.footertext {
+  font-size: 18px;
+  float: left;
+  margin-left: 5%;
+}
+
+@media (max-width: 767px) {
+  body {
+    background-repeat: no-repeat;
+  }
+
+  .footer {
+    text-align: center;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    position: fixed;
+    color: black;
+    background-color: #34d186;
+    padding: 5% 0;
+  }
+  
+  .footerbtns {
+    text-align: center;
+    float: none;
+    margin-bottom: 4%;
+    margin: 0;
+  }
+
+  .footertext {
+    display:inline-block;
+    width: 240px;
+    float: none;
+    margin: 0 0;
+  }
+}
