@@ -11,9 +11,9 @@ export default function MultiChoiceQuestion({ show, question, submitAnswer, ...r
         display: show ? 'block' : 'none'
       }}
     >
-      <h3 className="col-sm-12">
+      <h4 className="col-sm-12">
         {question.text}
-      </h3>
+      </h4>
       {
         question.options.map((option, optionKey) => {
           return (

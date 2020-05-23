@@ -2,8 +2,10 @@
   --primary-font: 'Open Sans', sans-serif;
   --secondary-font: 'Poppins', sans-serif;
   --primary-color: #5fd387;
+  --primary-color-transparent: rgba(95, 211, 135, .25);
   --secondary-color: #ffffff;
   --danger: #ff0062;
+  --dark-grey: #333333;
   --shadow: 3px 3px 10px #ddd;
   --space: 30px;
 }
@@ -11,7 +13,7 @@
 body {
   font-family: var(--secondary-font);
   background-color: var(--secondary-color);
-  /* background: url('https://i.ibb.co/SKBDBrn/Smarter-Safer-Choices-Microsite-Assets-Homescreen-background.png'); */
+  background: url('/background.png');
   background-size: cover;
   background-repeat: repeat;
   color: #232323;
@@ -34,6 +36,22 @@ a:hover a:active {
 
 .firstcon {
   padding: 0 12% 2% 12%;
+}
+
+.form-control {
+  border-radius: var(--space);
+  text-align: center;
+  width:85%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.form-control:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: var(--primary-color);
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem var(--primary-color-transparent);
 }
 
 @media (max-width: 1024px) {

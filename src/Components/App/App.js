@@ -11,11 +11,15 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Header />
-        <Switch>
-          <Route exact path="/" component={ Home } />
-          <Route exact path="/quiz" component={ Quiz } />
-          {/* <Route component={ Default } /> */}
-        </Switch>
+        <div className="container">
+          <div className="row">
+            <Switch>
+              <Route exact path="/" component={ Home } />
+              <Route exact path="/quiz" component={ Quiz } />
+              {/* <Route component={ Default } /> */}
+            </Switch>
+          </div>
+        </div>
         <Footer />
       </BrowserRouter>
     </div>

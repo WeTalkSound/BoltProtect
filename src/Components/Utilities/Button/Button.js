@@ -14,7 +14,7 @@ export default function Button({ type, linkTo, onClick, href, ...props }) {
       break;
     case href !== undefined:
       RenderedButton = (
-        <a className="btn btn-primary" href={href} {...props}>
+        <a className="btn btn-primary" target="_blank" rel="noopener noreferrer" href={href} {...props}>
           {props.children}
         </a>
       )

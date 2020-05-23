@@ -22,7 +22,7 @@ export default function PlainTextQuestion({ show, question, submitAnswer, ...res
         display: show ? 'block' : 'none'
       }}
     >
-      <h3>{question.text}</h3>
+      <h4>{question.text}</h4>
       <input
         placeholder=""
         onChange={updateAnswer}
@@ -31,7 +31,6 @@ export default function PlainTextQuestion({ show, question, submitAnswer, ...res
         name="name"
         type="text"
         className="form-control mb-3"
-        maxLength="10"
       />
       <p>{ status }</p>
       <Button onClick={submit}>Submit!</Button>

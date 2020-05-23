@@ -20,7 +20,7 @@ export default function Questions() {
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({
-        user_identifier: Date.now(),
+        user_identifier: Date.now().toString(),
         form_id: 4
       })
     })
@@ -44,7 +44,7 @@ export default function Questions() {
 
   const endQuiz = () => {
     fetch('https://app.trivyeah-backend.wtxtra.agency/api/v1/response/end', {
-      method: 'POST',
+      method: 'PUT',
       headers: {
         'Accept': 'application/json',
         'Content-Type': 'application/json'
@@ -57,8 +57,18 @@ export default function Questions() {
       .then(res => res.json())
       .then(data => {
         setProcessedResponse(data.data.processed)
+        setProcessedImage(data.data.hook_responses[0].response)
         setStatus('QUIZ_ENDED')
       })
+    // let ballot = Object.values(answers).map(answer => answer.value)
+    // let ballotCount = (
+    //   ballot.reduce(
+    //     (a,b,i,arr)=>
+    //     (arr.filter(v=>v===a).length>=arr.filter(v=>v===b).length?a:b),
+    //     null)
+    // )
+    // setProcessedResponse(ballotCount)
+    // setProcessedImage(`https://services.etin.space/bolt-campaign/api/protect/index.php?grade=${ballotCount}&name=${ballot[0].text}`)
   }
 
   const nextQuestion = () => {
@@ -115,7 +125,7 @@ export default function Questions() {
       )
       break;
     case "QUIZ_ENDED":
-      rendered = <Results grade={processedResponse} image={processedImage}  />
+      rendered = <Results grade={processedResponse} certificate={processedImage}  />
       break;
   
     default:
