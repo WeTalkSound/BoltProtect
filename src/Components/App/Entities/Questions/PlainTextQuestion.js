@@ -33,7 +33,7 @@ export default function PlainTextQuestion({ show, question, submitAnswer, ...res
         className="form-control mb-3"
       />
       <p>{ status }</p>
-      <Button onClick={submit}>Submit!</Button>
+      <Button onClick={submit}>Submit</Button>
     </div>
   )
 }

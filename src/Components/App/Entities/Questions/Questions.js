@@ -60,15 +60,6 @@ export default function Questions() {
         setProcessedImage(data.data.hook_responses[0].response)
         setStatus('QUIZ_ENDED')
       })
-    // let ballot = Object.values(answers).map(answer => answer.value)
-    // let ballotCount = (
-    //   ballot.reduce(
-    //     (a,b,i,arr)=>
-    //     (arr.filter(v=>v===a).length>=arr.filter(v=>v===b).length?a:b),
-    //     null)
-    // )
-    // setProcessedResponse(ballotCount)
-    // setProcessedImage(`https://services.etin.space/bolt-campaign/api/protect/index.php?grade=${ballotCount}&name=${ballot[0].text}`)
   }
 
   const nextQuestion = () => {
