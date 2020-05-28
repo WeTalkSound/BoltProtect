@@ -9,11 +9,13 @@ import Button from '../../Utilities/Button/Button'
 
 export default function Results({ grade, certificate }) {
   let icon = {}
+  let title = ""
   let description = "Yo! Stuff"
 
   switch (grade) {
     case "The “long road to becoming” a Protector":
       icon = longRoad
+      title = `You're on <span className="primary-text">${grade}</span>`
       description = `
                       <p>You have some work to do to set you on the path to being a protector.</p> 
                       <p>Deep down, you care about doing the right thing but you may not have the tools yet.</p>
@@ -26,6 +28,7 @@ export default function Results({ grade, certificate }) {
       break;
     case "The Self Protector":
       icon = selfProtector
+      title = `You're <span className="primary-text">${grade}</span>`
       description = `
                       <p>You’re a big believer that ‘charity begins within.’</p>
                       <p>
@@ -39,6 +42,7 @@ export default function Results({ grade, certificate }) {
       break;
     case "The Family Protector":
       icon = familyProtector
+      title = `You're <span className="primary-text">${grade}</span>`
       description = `
                       <p>All you need in this life is you and your family.</p>
                       <p>
@@ -53,6 +57,7 @@ export default function Results({ grade, certificate }) {
       break;
     case "The Community Protector":
       icon = communityProtector
+      title = `You're <span className="primary-text">${grade}</span>`
       description = `
                       <p>To you, the community is just one big family.</p>
                       <p>
@@ -72,6 +77,7 @@ export default function Results({ grade, certificate }) {
       break;
     case "The Ultimate Protector":
       icon = ultimateProtector
+      title = `You're <span className="primary-text">${grade}</span>`
       description = `
                       <p>You are the war and the fight.</p>
                       <p>Coronavirus has no chance around you, your loved ones or your community.</p>
@@ -91,7 +97,7 @@ export default function Results({ grade, certificate }) {
   }
   return (
     <>
-      <h3 className="text-center">You're <span className="primary-text">{ grade }</span></h3>
+      <h3 className="text-center" dangerouslySetInnerHTML={{__html: title}}></h3>
       <div className="row align-items-md-center">
         <div className="col-sm-12 mb-3 col-md-6">
           <img

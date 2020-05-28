@@ -13,7 +13,6 @@
 body {
   font-family: var(--secondary-font);
   background-color: var(--secondary-color);
-  background: url('/background.png');
   background-size: cover;
   background-repeat: repeat;
   color: #232323;

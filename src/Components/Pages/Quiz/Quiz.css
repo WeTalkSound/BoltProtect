@@ -2,7 +2,7 @@
     margin-bottom: 15px;
 }
 
-.Question h3 {
+.Question h4 {
     font-size: 23px;
     margin-bottom: 30px;
 }
@@ -45,4 +45,10 @@
     margin: 0;
     margin-left: 25px;
     text-align: left;
+}
+
+@media (min-width: 576px) {
+  .quiz-option {
+    width: 60%;
+  }
 }

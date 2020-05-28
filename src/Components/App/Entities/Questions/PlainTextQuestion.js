@@ -18,6 +18,7 @@ export default function PlainTextQuestion({ show, question, submitAnswer, ...res
 
   return (
     <div 
+      className="Question"
       style={{
         display: show ? 'block' : 'none'
       }}

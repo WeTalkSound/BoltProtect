@@ -7,7 +7,7 @@ export default function MultiChoiceQuestion({ show, question, submitAnswer, ...r
   }
 
   return (
-    <div style={{
+    <div className="Question" style={{
         display: show ? 'block' : 'none'
       }}
     >
