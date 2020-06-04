@@ -117,7 +117,7 @@ export default function Results({ grade, certificate }) {
         </div>
         <h3 className="col-12 text-center">Share this quiz!</h3>
         <SocialShare
-          text={"I am " + grade + ". Take the Bolt Protect Quiz to gauge your protector level."} 
+          text={"I got " + grade + ". Take the Bolt Protect Quiz to gauge your protector level."} 
           url="https://smarterwithbolt.com" 
           tag={"#SaferSmarterChoices"} 
         />
